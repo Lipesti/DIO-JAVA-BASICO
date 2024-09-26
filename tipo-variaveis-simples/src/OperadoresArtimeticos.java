@@ -17,6 +17,23 @@ public class OperadoresArtimeticos {
         
         number = 6; // Resetando a variavel
         number--; // Decremento de number 
-        System.out.println("Decremento " + number);
+        System.out.println("Decremento " + number + "\n");
+
+        //Boleano True e False 
+        boolean variavel = true; //
+
+        System.out.println(!variavel); // Saída: Valor da variavel: false devido o sinal de negação ! 
+        System.out.println(variavel); // Saída: Valor da variavel: true
+        
+        System.out.println("\n");
+
+
+        //Operadores Aritmeticos
+        int a = 5;
+        int b = 3;
+        System.out.println("Soma: " + (a + b)); // Saída: Soma: 8
+        System.out.println("Subtracao: " + (a - b)); // Saída: Subtracao: 2
+        System.out.println("Multiplicacao: " + (a * b)); // Saída: Multiplicacao: 15
+        System.out.println("Divisao: " + (a / b)); // Saída: Divisao: 1.6666666666666667
 }
 }
