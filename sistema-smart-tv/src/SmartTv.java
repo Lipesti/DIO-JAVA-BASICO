@@ -24,14 +24,15 @@ public class SmartTv {
         // Diminuir Volume -1
     }
 
-    public void trocarCanal() {
-        if (ligada) {
-            canal++;
-            System.out.println("Canal Atual: " + canal);
-        } else {
-            System.out.println("A TV não está ligada!");
-        }
+    public void trocarCanal(int novoCanal) {
+        canal = novoCanal;
     }
 
+    public void aumentarCanal(){
+        canal++;
+    }
     
+    public void diminuirCanal(){
+        canal--;
+    }
 }
