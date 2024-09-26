@@ -26,5 +26,11 @@ public class TipoVariavel {
         
         //String
         String nomeDoUsuario = "Juliana";
+
+        //Constantes é necessario usar o final para definir a constant e manter em caixa alta
+        final double PI = 3.14159;
+        final int MAX_CLIENTES = 10000;
+
+       
     }
 }
