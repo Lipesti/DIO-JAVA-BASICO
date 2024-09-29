@@ -1,4 +1,3 @@
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -7,17 +6,30 @@ public class ContaTerminal {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+        
         System.out.println("Por favor digite o numero da conta: ");
         int numeroConta = sc.nextInt();
-        sc.nextLine();
+        sc.nextLine();  // Consumir o \n deixado pelo nextInt()
 
         System.out.println("Por favor, digite o numero da agencia: ");
         String numeroAgenciaString = sc.nextLine();
 
         System.out.println("Por favor informe o seu nome: ");
         String nomeCliente = sc.nextLine();
-        System.out.println("Por favor informe a saldo da conta: ");
+        
+        System.out.println("Por favor informe o saldo da conta: ");
         double saldo = sc.nextDouble();
-        System.out.println("\nOlá " + nomeCliente +" obrigado por criar uma conta em nosso banco, sua agência é " + numeroAgenciaString + ", sua  conta é " + numeroConta + ", e seu saldo " + saldo + " já está disponível para saque");
+
+        // Usando o método concat() para construir a mensagem
+        String mensagem = "\nOlá ".concat(nomeCliente)
+                            .concat(", obrigado por criar uma conta em nosso banco. Sua agência é ")
+                            .concat(numeroAgenciaString)
+                            .concat(", sua conta é ")
+                            .concat(String.valueOf(numeroConta))
+                            .concat(", e seu saldo ")
+                            .concat(String.valueOf(saldo))
+                            .concat(" já está disponível para saque.");
+
+        System.out.println(mensagem);
     }
 }
