@@ -19,7 +19,11 @@ public class ContaTerminal {
         
         System.out.println("Por favor informe o saldo da conta: ");
         double saldo = sc.nextDouble();
-
+        
+        if (saldo <= 10){
+            System.out.println("Saldo insuficiente, para saque!");
+            
+        }
         // Usando o método concat() para construir a mensagem
         String mensagem = "\nOlá ".concat(nomeCliente)
                             .concat(", obrigado por criar uma conta em nosso banco. Sua agência é ")
