@@ -40,11 +40,28 @@ public class ResultadoEscolar {
         System.out.println("Média das notas: " + media);
         System.out.println("Número de faltas: " + faltas);
 
-        if (media >= 6 && faltas <= 15) {
-            System.out.println("Aluno aprovado! \nmedia "  + media + "\nfaltas " + faltas);
-        } else {
-            System.out.println("Aluno reprovado! \nmedia "  + media + "\nfaltas " + faltas);
 
-        }
+        // Condição ternária com operador lógico && 
+        // O resultado é "Aluno aprovado!" se a média for >= 6 e as faltas <= 15
+        String resultado = media >= 6 && faltas <= 15 
+        ? "Aluno aprovado! \nmedia "  + media + "\nfaltas " + faltas 
+        : "Aluno reprovado! \nmedia "  + media + "\nfaltas " + faltas;
+
+        System.out.println(resultado);
+        
+        // Alternativa com if-else
+        // O resultado é "Aluno aprovado!" se a média for >= 6 e as faltas <= 15
+        // Senão, o resultado é "Aluno reprovado!"
+        // O uso do operador ternário é mais conciso e legível neste caso.
+        // O código abaixo é equivalente ao código anterior com if-else.
+
+      /*
+    if (media >= 6 && faltas <= 15) {
+        System.out.println("Aluno aprovado! \nmedia "  + media + "\nfaltas " + faltas);
+    } else {
+        System.out.println("Aluno reprovado! \nmedia "  + media + "\nfaltas " + faltas);
+    }
+*/
+
     }
 }
